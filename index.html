@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add CSS code here */
+  </style>
+</head>
+<body>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  <div class="container">
+    <h1 id="title" class="text-center">Calculator</h1>
+    <p id="description" class="text-center">Use the buttons below or type directly into the input field</p>
+    <input type="text" id="result" readonly>
+    <div class="row">
+      <button id="clear" class="btn btn-danger col-3" onclick="clearResult()">C</button>
+      <button id="modulus" class="btn btn-secondary col-3" onclick="add('%')">%</button>
+      <button id="divide" class="btn btn-secondary col-3" onclick="add('/')">/</button>
+      <button id="multiply" class="btn btn-secondary col-3" onclick="add('*')">*</button>
+    </div>
+    <div class="row">
+      <button id="7" class="btn btn-light col-3" onclick="add(7)">7</button>
+      <button id="8" class="btn btn-light col-3" onclick="add(8)">8</button>
+      <button id="9" class="btn btn-light col-3" onclick="add(9)">9</button>
+      <button id="subtract" class="btn btn-secondary col-3" onclick="add('-')">-</button>
+    </div>
+    <div class="row">
+      <button id="4" class="btn btn-light col-3" onclick="add(4)">4</button>
+      <button id="5" class="btn btn-light col-3" onclick="add(5)">5</button>
+      <button id="6" class="btn btn-light col-3" onclick="add(6)">6</button>
+      <button id="add" class="btn btn-secondary col-3" onclick="add('+')">+</button>
+    </div>
+    <div class="row">
+      <button id="1" class="btn btn-light col-3" onclick="add(1)">1</button>
+      <button id="2" class="btn btn-light col-3" onclick="add(2)">2</button>
+      <button id="3" class="btn btn-light col-3" onclick="add(3)">3</button>
+      <button id="equal" class="btn btn-primary col-3" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
